@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <div class="headline-block">
+      <div class="bookmark">
+        <div class="text-logo"><span class="zanuda">Книги</span> зверям</div>
+        <p class="bookmark-text">Мы принимаем в дар старые книги. Продаем их&nbsp;тем, кому они&nbsp;нужны. А&nbsp;вырученные деньги отдаем <a href="shelters.html"> в&nbsp;приюты для животных</a>.</p>
+        <p class="bookmark-text">Все в Челябинске.</p>
+        <div class="bookmark-links-block">
+          <div class="bookmark-link"><a href="#books-instock" class="bookmark-links">Посмотреть книги</a></div>
+          <div class="bookmark-link"><a href="#address" class="bookmark-links">Куда принести книги</a></div>
+        </div>
+      </div>
+    </div>
+    <h2 id="books-instock">Какие есть книги?</h2>
+    <p class="text-yellow-light-italic-m">— Вот такие!</p>
+    <div class="catalogue plate">
+    	<div class="zanuda-kruglash lt"></div>
+    	<div class="zanuda-kruglash rt"></div>
+    	<div class="zanuda-kruglash lb"></div>
+    	<div class="zanuda-kruglash rb"></div>
+      <div class="tags-cloud">
+        <a href="" class="tag">Драма</a>
+        <a href="" class="tag active">Детектив</a>
+        <a href="" class="tag">Материалы конференции</a>
+      </div>
+      <div class="book-items">
+        <div class="book-item">
+          <a href="book.html" class="book-link">
+            <div class="book-cover" alt=""></div>
+            <div class="book-headline">Котяшка-обнимака и ежик наносят ответный удар</div>
+          </a>
+          <div class="book-author">Собака Барабака и Моня Помидорко</div>
+          <button class="book-price">Купить за 50 руб.</button>
+        </div>
+        <div class="book-item">
+          <a href="book.html" class="book-link">
+            <div class="book-cover" alt=""></div>
+            <div class="book-headline">Котяшка-обнимака и ежик наносят ответный удар</div>
+          </a>
+          <div class="book-author">Собака Барабака и Моня Помидорко</div>
+          <button class="book-price">Купить за 50 руб.</button>
+        </div>
+        <div class="book-item">
+          <a href="book.html" class="book-link">
+            <div class="book-cover" alt=""></div>
+            <div clas s="book-headline">Котяшка-обнимака и ежик наносят ответный удар</div>
+          </a>
+          <div class="book-author">Собака Барабака и Моня Помидорко</div>
+          <button class="book-price">Купить за 50 руб.</button>
+        </div>
+        <div class="book-item">
+          <a href="book.html" class="book-link">
+            <div class="book-cover" alt=""></div>
+            <div class="book-headline">Котяшка-обнимака и ежик наносят ответный удар</div>
+          </a>
+          <div class="book-author">Собака Барабака и Моня Помидорко</div>
+          <button class="book-price">Купить за 50 руб.</button>
+        </div>
+        <div class="book-item">
+          <a href="book.html" class="book-link">
+            <div class="book-cover" alt=""></div>
+            <div class="book-headline">Котяшка-обнимака и ежик наносят ответный удар</div>
+          </a>
+          <div class="book-author">Собака Барабака и Моня Помидорко</div>
+          <button class="book-price">Купить за 50 руб.</button>
+        </div>
+      </div>
+      <button class="show-more">Показать ещё</button>
+    </div>
+    <div class="subscribe">
+      <div class="text-l">Новые поступления</div>
+      <div class="inside-subscribe">
+        <p>Рассылка на почту</p>
+        <p>Не чаще раза в неделю</p>
+      </div>
+      <form class="subscribe-form">
+        <input type="email" required placeholder="Эл. почта" class="subscribe-input">
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+    <div class="footer">
+      <h2 id="address">Куда нести книги?</h2>
+      <p class="text-yellow-light-italic-m">
+        — Звоните +7 906 12-34-567, договоримся
+      </p>
+      <div class="text-white-s footer-description">
+        <p>Обычно люди приносят книги к нам на Яхтинскую, 7 — в Челябинске. По будням с 10:00 до 18:00.</p>
+        <p>Если вам это не подходит, позвоните — что-нибудь придумаем</p>
+      </div>
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=W4rTJCjzBh340MaUl1fKK9jsuePZTemH&width=100%&height=600&lang=ru_RU&sourceType=constructor"></script>
+      </div>
+    </div>
+  </div>
+  <div class="cart-wrapper hidden" id="cart-wrapper">
+    <button class="close-cart" onclick="hideCart()" id="hideCart">
+      <img src="img/close.png" width="26" height="25">
+    </button>
+    <div class="cart">
+      <p class="cart-heading">5 книг в корзине</p>
+      <a href="" class="btn-open-cart" onclick="showCart()" id="showCart">Оформить заказ</a>
+      <div class="cart-left">
+        <p class="books-in-cart">5 книг в корзине</p>
+        <p class="price-in-cart">На сумму 225 руб.</p>
+        <form class="buy-form">
+          <input type="tel" required placeholder="Телефон" class="buy-input">
+          <input type="email" placeholder="Эл. почта" class="buy-input">
+          <textarea placeholder="Комментарий" class="comment buy-input"></textarea>
+          <input type="checkbox" id="subscribe-check" class="">
+          <label for="subscribe-check" class="cart-label">Получать письма о новых книгах</label>
+          <button type="submit" class="send-order">Отправить заказ</button>
+          <div class="cart-text">Все 225 рублей отправим в приюты для животных Челябинска</div>
+        </form>
+      </div>
+      <div class="cart-right">
+        <div class="cart-book-item">
+          <div class="cart-book-cover" alt=""></div>
+          <div class="wrap-cart">
+            <div class="cart-book-info">
+              <div class="cart-book-headline">Котяшка-обнимака и ежик</div>
+              <div class="cart-book-author">Собака Барабака и Моня Помидорко</div>
+              <div class="cart-book-price">30 руб.</div>
+            </div>
+            <button class="book-delete">Удалить</button>
+          </div>
+        </div>
+        <div class="cart-book-item">
+          <div class="cart-book-cover" alt=""></div>
+          <div class="wrap-cart">
+            <div class="cart-book-info">
+              <div class="cart-book-headline">Котяшка-обнимака и ежик</div>
+              <div class="cart-book-author">Собака Барабака и Моня Помидорко</div>
+              <div class="cart-book-price">30 руб.</div>
+            </div>
+            <button class="book-delete">Удалить</button>
+          </div>
+        </div>
+        <div class="cart-book-item">
+          <div class="cart-book-cover" alt=""></div>
+          <div class="wrap-cart">
+            <div class="cart-book-info">
+              <div class="cart-book-headline">Котяшка-обнимака и ежик</div>
+              <div class="cart-book-author">Собака Барабака и Моня Помидорко</div>
+              <div class="cart-book-price">30 руб.</div>
+            </div>
+            <button class="book-delete">Удалить</button>
+          </div>
+        </div>
+        <div class="cart-book-item">
+          <div class="cart-book-cover" alt=""></div>
+          <div class="wrap-cart">
+            <div class="cart-book-info">
+              <div class="cart-book-headline">Котяшка-обнимака и ежик</div>
+              <div class="cart-book-author">Собака Барабака и Моня Помидорко</div>
+              <div class="cart-book-price">30 руб.</div>
+            </div>
+            <button class="book-delete">Удалить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/toggle-cart.js"></script>
+</body>
+
+</html>

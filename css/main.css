@@ -1,0 +1,840 @@
+@font-face {
+  font-family: 'serif-italic';
+  src: url('../fonts/serif-italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/serif-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/serif-italic.woff2') format('woff2'), /* Modern Browsers */
+    url('../fonts/serif-italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/serif-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/serif-italic.svg') format('svg'); /* Legacy iOS */  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'serif-regular';
+  src: url('../fonts/serif-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/serif-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/serif-regular.woff2') format('woff2'), /* Modern Browsers */
+    url('../fonts/serif-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/serif-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/serif-regular.svg') format('svg'); /* Legacy iOS */  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sans';
+  src: url('../fonts/sans.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/sans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/sans.woff2') format('woff2'), /* Modern Browsers */
+    url('../fonts/sans.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/sans.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/sans.svg') format('svg'); /* Legacy iOS */  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-size: 20px;
+	color: white;
+	font-family: 'serif-italic', serif;
+	line-height: 1.2;
+	background-color: #212121;
+	background-image: url(../img/bg.png);
+	padding: 0px;
+	padding-bottom: 80px;
+	margin: 0px;
+	min-width: 1260px;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	color: inherit;
+}
+
+a img {
+	border: none;
+	outline: none;
+}
+
+p {
+	margin: 0 0 0.5em 0;
+}
+
+h2 {
+	font-size: 70px;
+	font-family: sans;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.9;
+	margin: 0px;
+	text-align: center;
+}
+
+input, textarea {
+	padding: 6px 10px;
+	font-family: 'serif-italic';
+	line-height: 1.2;
+	font-size: 20px;
+	outline: none;
+	border: 0;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus {
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+}
+
+button {
+	padding: 6px 20px;
+	font-family: 'serif-italic';
+	line-height: 1.2;
+	font-size: 20px;
+	outline: none;
+	border: 0;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+	background-color: white;
+	border-radius: 3px;
+	transition: opacity 0.3s ease;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+button:active {
+	opacity: 1;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: 1200px;
+}
+
+.headline-block {
+	background-image: url('../img/cat.jpg');
+	background-color: #f7f2e1;
+	background-size: cover;
+	width: 100%;
+	padding-top: 62.5%;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 60px;
+
+}
+
+.bookmark {
+	background-color: #fc0;
+	width: 220px;
+	margin-left: 60px;
+	padding: 30px;
+	color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.text-logo {
+	font-size: 110px;
+	color: white;
+	font-family: 'sans';
+	text-transform: uppercase;
+	/*text-align: justify;*/
+	line-height: 85px;
+	width: 220px;
+	/*overflow: hidden;*/
+	margin-bottom: 40px;
+}
+
+.zanuda {
+	letter-spacing: 0.1em;
+}
+
+/*.text-logo:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}*/
+
+.bookmark-links-block {
+	margin-top: 80px;
+}
+
+.bookmark-links {
+	font-size: 30px;
+	font-family: 'sans';
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px dotted black;
+}
+
+.bookmark-link {
+	margin-bottom: 20px;
+}
+
+.bookmark-text {
+	font-family: serif-italic;
+}
+
+.text-yellow-light-italic-m {
+	color: #ffe17c;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.plate {
+	background-color: #f0ead5;
+	color: black;
+	padding: 60px 60px 90px 60px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.tags-cloud {
+	margin-bottom: 40px;
+}
+
+.tag {
+	display: inline-block;
+	margin: 0 2px 6px 0;
+	padding: 3px 12px;
+	background-color: white;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+	border-radius: 50px;
+	border-bottom: none;
+}
+
+.tag.active {
+	background-color: #ffe17c;
+	box-shadow: 
+		0 1px 0 0 white,
+		inset 0 1px 2px rgba(0,0,0,0.20);
+}
+
+.book-items {
+	font-size: 0px;
+}
+
+.book-item {
+	display: inline-block;
+	width: 230px;
+	vertical-align: top;
+	margin: 0 40px 50px 0;
+	font-size: 20px;
+}
+
+.book-cover {
+	background: 
+		url('../img/book_m.png'),
+		url('../img/cover.jpg'),
+		url('../img/cover.jpg');
+	background-size:
+		100% 100%,
+		200px 300px,
+		197px 307px;
+	background-position: 
+		0 0,
+		0 7px,
+		0 0;
+	background-repeat: no-repeat;
+	border-radius: 7px 0 3px 3px; 
+	box-shadow: 7px 7px 11px 0 rgba(62,39,34,0.2);
+	width: 200px;
+	height: 307px;
+	margin-bottom: 4px;
+}
+
+.book-headline {
+	font-size: 30px;
+	font-family: sans;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0;
+}
+
+.book-author {
+	color: #c23600;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0;
+	margin-bottom: 6px;
+}
+
+.book-price {
+	border: none;
+	outline: none;
+	padding: 5px 15px;
+	background-color: #ffd641;
+	box-shadow: 
+		inset 0 1px 1px rgba(255,255,255,0.2),
+		inset 0 -1px 1px rgba(0,0,0,0.1);
+	border-radius: 3px;
+	font-family: 'serif-italic';
+	font-size: 20px;
+}
+
+.show-more {
+	border: none;
+	outline: none;
+	width: 100%;
+	margin-right: 40px;
+	font-family: sans;
+	font-size: 40px;
+	padding: 12px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+
+.subscribe {
+	background-color: #ffd641;
+	padding: 15px 100px 25px 60px; 
+	margin-bottom: 80px;
+	color: black;
+	border-radius: 3px;
+}
+
+.text-l {
+	font-family: sans;
+	font-size: 70px;
+}
+
+.subscribe .text-l {
+	margin-right: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+
+.inside-subscribe {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 100px;
+}
+
+.subscribe-form {
+	display: inline-block;
+}
+
+.inside-subscribe p {
+	margin: 0;
+}
+
+.footer-description p{
+	text-align: center;
+	margin: 0;
+}
+
+.footer-description{
+	margin-bottom: 40px;
+}
+
+
+/*book page*/
+
+.header {
+	padding: 15px 30px 25px 30px;
+}
+
+.mini-logo {
+	font-family: 'sans';
+	color: #ffd641;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 25px;
+	display: inline-block;
+	margin-right: 30px;
+	width: 70px;
+	vertical-align: middle;
+}
+
+.header-about {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 60px;
+}
+
+.header-about p {
+	margin: 0;
+}
+
+.header-about a {
+	color: white;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.header-links {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-links a {
+	color: #ffd641;
+	font-size: 30px;
+	font-family: 'sans';
+	border-bottom: 1px solid rgba(255,214,65,0.3);
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+
+.header-links a:not(:last-child) {
+	margin-right: 30px;
+}
+
+.book {
+	padding-bottom: 50px;
+}
+
+.book-cover-large {
+		background: 
+		url('../img/book_l.png'),
+		url('../img/cover.jpg'),
+		url('../img/cover.jpg');
+	background-size:
+		100% 100%,
+		398px 611px,
+		392px 598px;
+	background-position: 
+		0 0,
+		0 13px,
+		0 0;
+	background-repeat: no-repeat;
+	border-radius: 13px 0 6px 6px; 
+	width: 398px;
+	height: 611px;
+	display: inline-block;
+	margin-right: 40px;
+	vertical-align: top;
+}
+
+.book-info {
+	display: inline-block;
+	width: 600px;
+	vertical-align: top;
+
+}
+
+.book-headline-large {
+	font-size: 70px;
+	font-family: sans;
+	margin: 0px;
+}
+
+.book-author-large {
+	color: #c23600;
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.book-description {
+	margin-bottom: 20px;
+}
+
+.book-table td {
+	padding: 0px 20px 0px 0px;
+	min-height: 30px;
+	vertical-align: baseline;
+}
+
+.book-table .tag {
+	margin-bottom: 0px;
+} /*максимум 3, пожалуйста*/
+
+.book-table .tag:first-child {
+	margin-left: -12px;
+}
+
+.book-vertical-wrapper {
+	min-height: 485px;
+	margin-bottom: 20px;
+}
+
+.shop-price {
+	font-size: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.shop-price::after {
+	content: "";
+	display: block;
+	width: 106%;
+	height: 1px;
+	background-color: #f8432e;
+	position: absolute;
+	z-index: 1;
+	top: 19px;
+	left: -6%;
+	transform: rotate(18deg);
+	}
+
+	.book-price-large,
+	.send-order {
+		margin-right: 10px;
+		font-size: 30px;
+		padding: 10px 30px;
+		vertical-align: middle;
+	}
+
+	.promise {
+		display: inline-block;
+		max-width: 300px;
+		vertical-align: middle;
+	}
+
+	.price-block {
+		margin-bottom: 15px;
+	}
+
+	.delivery {
+		border-bottom: 1px solid rgba(0,0,0,0.3);
+		border-top: 1px solid rgba(0,0,0,0.3);
+		padding: 20px 0px 30px 0px;
+		margin-bottom: 40px;
+	}
+
+	.delivery-headline {
+		font-size: 70px;
+		font-family: sans;
+		margin: 0px;
+		display: inline-block;
+		vertical-align: baseline;
+		margin-right: 40px;
+	}
+
+	.delivery-info {
+		display: inline-block;
+		width: 600px;
+		vertical-align: baseline;
+	}
+
+.cart-wrapper.shown .cart {
+	background-color: #f7f2e1;
+	color: black;
+	width: 1000px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.cart-wrapper.shown .cart-heading {
+	display: none;
+}
+
+.cart-wrapper.hidden .cart {
+	padding: 15px 24px 24px 20px;
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	overflow: hidden;
+	color: black;
+}
+
+.books-in-cart {
+	font-family: sans;
+	font-size: 70px;
+	margin-bottom: 0px;
+}
+
+.btn-open-cart {
+	border: none;
+	outline: none;
+	padding: 5px 15px;
+	background-color: #ffd641;
+	box-shadow: 
+		inset 0 1px 1px rgba(255,255,255,0.2),
+		inset 0 -1px 1px rgba(0,0,0,0.1);
+	border-radius: 3px;
+	font-family: 'serif-italic';
+	font-size: 20px;
+	display: none;
+	transition: opacity 0.3s ease;
+}
+
+.btn-open-cart:hover {
+	opacity: 0.7;
+}
+
+.btn-open-cart:active {
+	opacity: 1;
+}
+
+.price-in-cart {
+	color: #c23600;
+	font-size: 30px;
+}
+
+.cart-label {
+	padding-left: 30px;
+	position: relative;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"]+label::before {
+	content: '';
+	display: inline-block;
+	background-image: url('../img/checkbox.png');
+	position: absolute;
+	width: 19px;
+	height: 21px;
+	top: 0px;
+	left: 0px;
+}
+
+input[type="checkbox"]:checked+label::before {
+	content: '';
+	display: inline-block;
+	background-image: url('../img/checkbox_checked.png');
+	position: absolute;
+	width: 19px;
+	height: 21px;
+	top: 0px;
+	left: 0px;
+}
+
+.buy-input {
+	width: 100%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.comment {
+	height: 128px;
+}
+
+.cart-book-item {
+	position: relative;
+}
+
+.cart-book-cover {
+	background: 
+		url('../img/book_s.png'),
+		url('../img/cover.jpg'),
+		url('../img/cover.jpg');
+	background-size:
+		100% 100%,
+		60px 94px,
+		59px 90px;
+	background-position: 
+		0 0,
+		0 4px,
+		0 0;
+	background-repeat: no-repeat;
+	border-radius: 3px 0 2px 2px; 
+	box-shadow: 2px 2px 4px 0 rgba(62,39,34,0.2);
+	width: 60px;
+	height: 94px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.cart-book-info {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.cart-book-headline {
+	font-size: 30px;
+	font-family: sans;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0;
+	max-width: 320px;
+}
+
+.cart-book-author {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0;
+	max-width: 320px;
+}
+
+.cart-book-price {
+	color: #c23600;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0;
+	margin-bottom: 6px;
+}
+
+.book-delete {
+	float: right;
+	vertical-align: top;
+}
+
+.cart-left {
+	float: left;
+	width: 40%;
+	padding: 30px 50px;
+	box-sizing: border-box;
+}
+
+.cart-right {
+	float: left;
+	width: 60%;
+	padding: 40px 50px 40px 0px;
+	box-sizing: border-box;
+}
+
+.send-order {
+	width: 100%;
+	background-color: #ffd641;
+	box-shadow: 
+		inset 0 1px 1px rgba(255,255,255,0.2),
+		inset 0 -1px 1px rgba(0,0,0,0.1);
+	border-radius: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.cart-text {
+	width: 100%;
+}
+
+.wrap-cart {
+	margin-left: 80px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.cart-wrapper.shown {
+	background: rgba(0,0,0,0.6);
+	overflow: auto;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 80px 0;
+	z-index: 2;
+}
+
+.close-cart {
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.social {
+	border-bottom: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.shelter-link {
+	color: #c23600;
+	font-size: 30px;
+	border-bottom-color: rgba(194,154,0,0.3);
+	margin-right: 8px;
+}
+
+h1 {
+	font-family: "sans";
+	font-size: 70px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.shelter-preheader {
+	margin: 0px;
+}
+
+.cart-wrapper.hidden .cart-right,
+.cart-wrapper.hidden .cart-left,
+.cart-wrapper.hidden .close-cart {
+	display: none;
+}
+
+.cart-wrapper.hidden .btn-open-cart,
+.cart-wrapper.hidden .cart-heading {
+	display: block;
+}
+
+.cart-wrapper.hidden {
+	position: fixed;
+	bottom: 0;
+	right: 80px;
+}
+
+.cart-heading {
+	font-family: "sans";
+	font-size: 40px;
+	margin: 0px;
+}
+
+/*.cart-wrapper {
+	transition: all 1s ease;
+}
+*/
+.no-scroll {
+	overflow: hidden;
+}
+
+.book-link {
+	display: block;
+	border-bottom: none;
+	transition: color 0.3s ease;
+}
+
+.book-link:hover {
+	color: #c23600;
+}
+
+.book-link:hover .book-cover {
+	box-shadow: 10px 10px 20px 0 rgba(62,39,34,0.3);
+	transition: box-shadow 0.3s ease;
+}
+
+.mini-logo-link {
+	border-bottom: none;
+}
+
+.mini-logo-link:hover {
+	color: white;
+}
+
+.zanuda-kruglash {
+	position: absolute;
+	background-color: #212121;
+	background-image: url(../img/bg.png);
+	width: 60px;
+	height: 60px;
+	border-radius: 100%; 
+}
+
+.zanuda-kruglash.lt {
+	left: -30px;
+	top: -30px;
+}
+
+.zanuda-kruglash.rt {
+	right: -30px;
+	top: -30px;
+}
+
+.zanuda-kruglash.lb {
+	left: -30px;
+	bottom: -30px;
+}
+
+.zanuda-kruglash.rb {
+	right: -30px;
+	bottom: -30px;
+}
